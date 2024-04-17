@@ -1,19 +1,17 @@
 function ordemDecrescente() {
-    var num1 = 0;
-    var num2 = 0;
-    var num3 = 0;
-    var num4 = 0;
-    var matriz = 0;
 
-    num1 = parseInt(prompt("Digite um numero:"));
-    num2 = parseInt(prompt("Digite outro numero:"));
-    num3 = parseInt(prompt("Digite outro numero:"));
-    num4 = parseInt(prompt("Digite outro numero:"));
+   var input = prompt("Digite 4 números separados por espaços:");
 
-    matriz = sort([num1],[num2],[num3],[num4]);
-    
+   var numeros = input.split(' ').map(function(num) {
+       return parseInt(num);
+   });
 
-    alert("A ordem decrescente é :" + matriz);
+   numeros.sort(function(a, b) {
+       return b - a;
+   });
 
+   var ordemDecrescenteString = numeros.join(', ');
+
+   alert("A ordem decrescente é: " + ordemDecrescenteString);
 
 }

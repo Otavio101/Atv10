@@ -5,14 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="Ex1.js"></script>
+    <script src="Ex2.js"></script>
     <script src="Ex3.js"></script>
     <script src="Ex4.js"></script>
+    <script src="Ex5.js"></script>
+    <script src="Ex6.js"></script>
+    <script src="Ex7.js"></script>
     <title>JavaScript</title>
 </head>
 <body>
-    <button onclick="somarNumeros()">Ex1</button>
-    <button>Ex2</button>
-    <button onclick="ganhoGasto()">Ex3</button>
-    <button onclick="ordemDecrescente()">Ex4</button>
+
+    <div class="flex">
+        <button onclick="somarNumeros()">Ex1</button>
+        <button id="startButton" onclick="contagemRegressiva()">Ex2</button>
+        <button onclick="ganhoGasto()">Ex3</button>
+        <button onclick="ordemDecrescente()">Ex4</button>
+        <button onclick="parImpar()">Ex5</button>
+        <button onclick="verificarLetra()">Ex6</button>
+        <button onclick="mostrarPrecoPicolé()">Ex7</button>
+    </div>
+
+    <p class="contagem" id="countdown"></p>
+
 </body>
 </html>
